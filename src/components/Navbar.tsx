@@ -4,6 +4,7 @@ import Image from "next/image"
 import SearchBar from "./SearchBar"
 import NavIcons from "./NavIcons"
 
+// Responsive Layout 响应式布局
 const Navbar = () => {
   return (
     <div className="h-20 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 relative">
@@ -15,7 +16,7 @@ const Navbar = () => {
         <Menu />
       </div>
       {/* BIGGER SCREEN */}
-      <div className="hidden md:flex justify-between items-center h-full">
+      <div className="hidden md:flex justify-between items-center gap-8 h-full">
         {/* LEFT */}
         <div className="w-1/3 xl:w-1/2 flex items-center gap-12 ">
           <Link href="/" className="flex items-center gap-3">
